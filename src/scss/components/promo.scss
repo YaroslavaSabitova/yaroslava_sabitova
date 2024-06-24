@@ -3,6 +3,59 @@
     height: 100vh;
     text-align: center;
 
+    &__photos {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        z-index: 100;
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: space-between;
+        transform: translateX(-50%);
+
+        &_img {
+            transition: all 0.3s ease;
+        }
+
+        &_left,
+        &_right {
+            position: relative;
+            width: 50%;
+            // border: 1px solid red;
+        }
+
+        &_left {
+            animation: float 4s linear 1s infinite;
+            transform: rotate(0deg) translate3d(10px, 2px, 0) rotate(0deg);
+
+            .photo_1 {
+                margin-right: auto;
+                filter: sepia(0.5);
+                transform: rotate(15deg);
+
+                &:hover {
+                    filter: sepia(0) drop-shadow(2px 2px 2px rgb(255, 255, 255));
+                }
+            }
+        }
+
+        &_right {
+            animation: float 4.5s linear 1s infinite reverse;
+            transform: rotate(0deg) translate3d(10px, 2px, 0) rotate(0deg);
+
+            .photo_2 {
+                margin-left: auto;
+                filter: opacity(0.7);
+                transform: rotate(-11deg);
+
+                &:hover {
+                    filter: opacity(1) drop-shadow(2px 2px 2px rgb(255, 255, 255));
+                }
+            }
+        }
+    }
+
     &__wrapper {
         position: absolute;
         bottom: 12%;
@@ -15,7 +68,7 @@
         align-content: center;
         justify-content: center;
         gap: 5rem;
-        border: 1px solid red;
+        // border: 1px solid red;
         transform: translateX(-50%);
     }
 
@@ -26,8 +79,18 @@
 
     &__button {
         font-family: var(--second-family);
-        color: var(--color-accent-yellow);
-        background-color: var(--color-dark-orange);
-        border: 1px solid var(--color-accent-yellow);
+        color: var(--color-accent-green);
+        background-color: var(--color-transparent);
+        border: 1px solid var(--color-accent-green);
+    }
+}
+
+@keyframes float {
+    from {
+        transform: rotate(0deg) translate3d(10px, 2px, 0) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translate3d(10px, 2px, 0) rotate(-360deg);
     }
 }

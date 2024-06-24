@@ -1,6 +1,8 @@
 .logo {
     z-index: 100;
-    width: 20rem;
-    height: 7rem;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--color-white);
     cursor: pointer;
 }

@@ -24,6 +24,7 @@
     }
 
     &:active {
+        box-shadow: 3px 3px 2px var(--color-black);
         filter: brightness(0.8);
         transform: translateY(5px);
     }

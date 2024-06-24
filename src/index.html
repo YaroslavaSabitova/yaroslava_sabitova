@@ -19,13 +19,8 @@
                 <a
                     class="logo main-header__logo"
                     href="https://t.me/YaroslavaSabitova"
-                    target="_blank">
-                    <img
-                        src="./dist/img/logo.png"
-                        alt="logo"
-                        class="logo__img"
-                        width="200"
-                        height="70" />
+                    target="_blank"
+                    >YaroslavaSabitova
                 </a>
                 <ul class="nav main-header__nav">
                     <li class="nav nav__item" style="transition-delay: 0.5s">
@@ -44,16 +39,22 @@
         <main>
             <div class="container">
                 <section class="promo">
-                    <div class="clouds">
-                        <div class="clouds__left js_cloud_left">
-                            <div class="cloud clouds__left_1"></div>
-                            <div class="cloud clouds__left_2"></div>
-                            <div class="cloud clouds__left_3"></div>
+                    <div class="promo__photos">
+                        <div class="promo__photos_left js_photo_1">
+                            <img
+                                class="promo__photos_img photo_1"
+                                src="./dist/img/1.png"
+                                width="300"
+                                height="300"
+                                alt="photo1" />
                         </div>
-                        <div class="clouds__right js_cloud_right">
-                            <div class="cloud clouds__right_1"></div>
-                            <div class="cloud clouds__right_2"></div>
-                            <div class="cloud clouds__right_3"></div>
+                        <div class="promo__photos_right js_photo_2">
+                            <img
+                                class="promo__photos_img photo_2"
+                                src="./dist/img/2.png"
+                                width="300"
+                                height="300"
+                                alt="photo2" />
                         </div>
                     </div>
 
@@ -64,10 +65,6 @@
                         </h1>
                         <div class="title__wrapper">
                             <p class="title__wrapper_text-1">Junior Frontend Developer</p>
-                            <p class="title__wrapper_text-2">with passion to create animation</p>
-                            <p class="title__wrapper_text-3">
-                                if you know the treatment, please, let me know
-                            </p>
                         </div>
 
                         <button class="button promo__button js_btn_promo" type="button">
@@ -91,15 +88,23 @@
 
                         <h2 class="second-title projects__title">My projects</h2>
 
-                        <ul class="projects__wrapper">
-                            <li class="projects__list">
-                                <a href="" class="projects__link"></a>
-                            </li>
-                            <li class="projects__list">
-                                <a href="" class="projects__link"></a>
-                            </li>
-                            <li class="projects__list">
-                                <a href="" class="projects__link"></a>
+                        <ul class="projects__list">
+                            <li class="projects__item">
+                                <div class="projects__item_front">
+                                    <img
+                                        class="projects__item_front-img"
+                                        width="250"
+                                        height="250"
+                                        src="./dist/img/parallax-example.png"
+                                        alt="parallax-example" />
+                                    <a
+                                        href="https://yaroslavasabitova.github.io/parallax-example/"
+                                        target="_blank"
+                                        >Parallax Example</a
+                                    >
+                                </div>
+
+                                <div class="projects__item_back"></div>
                             </li>
                         </ul>
                     </div>

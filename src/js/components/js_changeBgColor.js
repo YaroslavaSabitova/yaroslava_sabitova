@@ -1,6 +1,6 @@
 export default function () {
-    const colorStep = 2;
-    let colorResultHSL = 223;
+    const colorStep = 3;
+    let colorResultHSL = 168;
     let curentScroll = 0;
 
     function changeColor() {
@@ -14,7 +14,7 @@ export default function () {
             }
         } else {
             if (scrollTop === 0) {
-                colorResultHSL = 223;
+                colorResultHSL = 168;
             } else {
                 colorResultHSL -= colorStep;
             }
@@ -24,10 +24,7 @@ export default function () {
             }
         }
 
-        document.body.setAttribute(
-            'style',
-            `background-color: hsl(${colorResultHSL}deg 100% 18%);`
-        );
+        document.body.setAttribute('style', `background-color: hsl(${colorResultHSL}deg 84% 19%);`);
 
         curentScroll = scrollTop;
     }

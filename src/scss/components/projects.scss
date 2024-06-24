@@ -1,4 +1,15 @@
 .projects {
     height: 100vh;
-    border: 1px solid red;
+    // border: 1px solid red;
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        justify-items: center;
+    }
 }
