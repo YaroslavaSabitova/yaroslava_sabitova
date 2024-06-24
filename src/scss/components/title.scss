@@ -1,5 +1,5 @@
 .title {
-    font-family: var(--second-family);
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
     font-size: 90px;
@@ -23,12 +23,34 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    &__description {
-        margin-bottom: 10rem;
+    &__wrapper {
+        display: flex;
+        width: 45%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
         font-family: var(--font-family);
+
         font-weight: 400;
         font-size: 4rem;
+        text-align: center;
         color: var(--color-accent-green);
+
+        &_text-1 {
+            font-size: 4rem;
+        }
+
+        &_text-2 {
+            font-size: 3rem;
+        }
+
+        &_text-3 {
+            font-family: var(--second-family);
+            font-size: 2rem;
+            color: var(--color-dark-green);
+        }
     }
 }
 

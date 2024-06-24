@@ -1,13 +1,19 @@
 .clouds {
+    position: absolute;
+    top: 12%;
+    left: 50%;
     display: flex;
+    width: 70%;
     align-items: center;
     justify-content: center;
+    transform: translateX(-50%);
 
     &__left,
     &__right {
         position: relative;
         width: 50%;
         height: 20rem;
+        border: 1px solid red;
 
         .cloud {
             position: absolute;

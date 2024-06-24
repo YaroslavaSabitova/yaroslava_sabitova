@@ -1,5 +1,5 @@
 export default function () {
-    const colorStep = 1.5;
+    const colorStep = 2;
     let colorResultHSL = 223;
     let curentScroll = 0;
 
