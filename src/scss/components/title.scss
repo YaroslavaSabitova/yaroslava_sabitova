@@ -7,18 +7,18 @@
     letter-spacing: 4px;
     background: linear-gradient(
         270deg,
-        var(--color-white),
+        var(--color-accent-green),
         transparent,
-        var(--color-white),
+        var(--color-accent-green),
         transparent,
-        var(--color-white),
+        var(--color-accent-green),
         transparent,
-        var(--color-white)
+        var(--color-accent-green)
     );
     background-size: 400% 400%;
-    animation: title 20s ease infinite;
+    animation: title 20s linear infinite;
     -webkit-background-clip: text;
-    -webkit-text-stroke: 1px var(--color-white);
+    -webkit-text-stroke: 1px var(--color-accent-green);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -15,7 +15,12 @@
         transform: translateX(-50%);
 
         &_img {
-            transition: all 0.3s ease;
+            filter: brightness(1.1);
+            transition: filter 0.3s ease;
+
+            &:hover {
+                filter: brightness(1.1) drop-shadow(2px 2px 2px #36a681);
+            }
         }
 
         &_left,
@@ -26,39 +31,43 @@
         }
 
         &_left {
-            animation: float 4s linear 1s infinite;
+            // animation: fromTop 1.2s ease 0.3s backwards;
+            // animation: float 4s linear 1s infinite;
+            animation-name: fromTop, float;
+            animation-duration: 1.5s, 4s;
+            animation-delay: 0.5s, 2.1s;
+            animation-timing-function: ease, linear;
+            animation-fill-mode: backwards, none;
+            animation-iteration-count: 1, infinite;
             transform: rotate(0deg) translate3d(10px, 2px, 0) rotate(0deg);
 
             .photo_1 {
                 margin-right: auto;
-                filter: sepia(0.5);
                 transform: rotate(15deg);
-
-                &:hover {
-                    filter: sepia(0) drop-shadow(2px 2px 2px rgb(255, 255, 255));
-                }
             }
         }
 
         &_right {
-            animation: float 4.5s linear 1s infinite reverse;
+            // animation: float 4.5s linear 1s infinite reverse;
+            animation-name: fromTop, float;
+            animation-duration: 1.5s, 4s;
+            animation-delay: 0.7s, 2.3s;
+            animation-timing-function: ease, linear;
+            animation-direction: normal, reverse;
+            animation-fill-mode: backwards, none;
+            animation-iteration-count: 1, infinite;
             transform: rotate(0deg) translate3d(10px, 2px, 0) rotate(0deg);
 
             .photo_2 {
                 margin-left: auto;
-                filter: opacity(0.7);
                 transform: rotate(-11deg);
-
-                &:hover {
-                    filter: opacity(1) drop-shadow(2px 2px 2px rgb(255, 255, 255));
-                }
             }
         }
     }
 
     &__wrapper {
         position: absolute;
-        bottom: 12%;
+        bottom: 7%;
         left: 50%;
         display: flex;
         width: 55%;
@@ -82,6 +91,25 @@
         color: var(--color-accent-green);
         background-color: var(--color-transparent);
         border: 1px solid var(--color-accent-green);
+    }
+}
+
+@keyframes fromTop {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg) translate3d(10px, -30px, 0) rotate(0deg);
+    }
+    35% {
+        opacity: 0.5;
+        transform: rotate(0deg) translate3d(10px, 20px, 0) rotate(0deg);
+    }
+    70% {
+        opacity: 0.8;
+        transform: rotate(0deg) translate3d(10px, -20px, 0) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0deg) translate3d(10px, 2px, 0) rotate(0deg);
     }
 }
 

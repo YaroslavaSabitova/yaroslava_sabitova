@@ -7,14 +7,16 @@
     font-weight: 700;
     font-size: 2.5rem;
     text-align: center;
+    color: var(--color-accent-green);
     border-radius: 18px;
     transition: all 0.3s ease;
     overflow: hidden;
 
     &::before {
         @include pseudoelem;
+        z-index: -1;
         width: 200%;
-        background: linear-gradient(44deg, #18a2cc00, #ffffff85, #ffffff00);
+        background: linear-gradient(44deg, #7edab9, #ffffff85, #7edab9);
         transition: transform 0.3s ease;
         transform: translateX(0%);
     }

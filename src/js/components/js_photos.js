@@ -6,7 +6,7 @@ export default function () {
     function move() {
         const incrementer = window.scrollY;
 
-        title.style.bottom = 12 + incrementer * 0.1 + '%';
+        title.style.bottom = 7 + incrementer * 0.1 + '%';
 
         photoLeft.style.bottom = 60 + incrementer * 0.16 + '%';
         photoLeft.style.left = 0 + incrementer * -0.2 + '%';
