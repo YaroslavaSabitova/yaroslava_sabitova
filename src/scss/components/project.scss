@@ -9,7 +9,7 @@
 
     &__front,
     &__back {
-        padding: 7rem 0 5rem;
+        padding: 5rem 0 3rem;
         border-top-left-radius: 15%;
         border-top-right-radius: 15%;
         box-shadow: 5px 5px 20px var(--color-grey);
@@ -51,10 +51,10 @@
 
             &-links {
                 display: flex;
-                width: 70%;
+                width: 100%;
                 flex-direction: row;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 font-weight: 400;
                 font-size: 3rem;
                 color: var(--color-dark-grey);

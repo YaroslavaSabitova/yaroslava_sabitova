@@ -14,9 +14,27 @@
         justify-content: space-between;
         transform: translateX(-50%);
 
+        @media (max-width: 1399px) {
+            width: 100%;
+        }
+
+        @media (max-width: 767px) {
+            z-index: -1;
+        }
+
         &_img {
             filter: brightness(1.1);
             transition: filter 0.3s ease;
+
+            @media (max-width: 991px) {
+                width: 20rem;
+                height: 20rem;
+            }
+
+            @media (max-width: 767px) {
+                width: 15rem;
+                height: 15rem;
+            }
 
             &:hover {
                 filter: brightness(1.1) drop-shadow(2px 2px 2px #36a681);
@@ -27,12 +45,10 @@
         &_right {
             position: relative;
             width: 50%;
-            // border: 1px solid red;
+            border: 1px solid red;
         }
 
         &_left {
-            // animation: fromTop 1.2s ease 0.3s backwards;
-            // animation: float 4s linear 1s infinite;
             animation-name: fromTop, float;
             animation-duration: 1.5s, 4s;
             animation-delay: 0.5s, 2.1s;
@@ -41,14 +57,25 @@
             animation-iteration-count: 1, infinite;
             transform: rotate(0deg) translate3d(10px, 2px, 0) rotate(0deg);
 
+            @media (max-width: 767px) {
+                margin: 0 auto;
+            }
+
             .photo_1 {
                 margin-right: auto;
                 transform: rotate(15deg);
+
+                @media (max-width: 991px) {
+                    margin: 0 0 0 2rem;
+                }
+
+                @media (max-width: 767px) {
+                    margin: 0 auto;
+                }
             }
         }
 
         &_right {
-            // animation: float 4.5s linear 1s infinite reverse;
             animation-name: fromTop, float;
             animation-duration: 1.5s, 4s;
             animation-delay: 0.7s, 2.3s;
@@ -58,9 +85,17 @@
             animation-iteration-count: 1, infinite;
             transform: rotate(0deg) translate3d(10px, 2px, 0) rotate(0deg);
 
+            @media (max-width: 767px) {
+                display: none;
+            }
+
             .photo_2 {
                 margin-left: auto;
                 transform: rotate(-11deg);
+
+                @media (max-width: 991px) {
+                    margin: 0 2rem 0 auto;
+                }
             }
         }
     }
@@ -76,8 +111,8 @@
         align-items: center;
         align-content: center;
         justify-content: center;
-        gap: 5rem;
-        // border: 1px solid red;
+        gap: 3rem;
+        border: 1px solid red;
         transform: translateX(-50%);
     }
 
@@ -97,15 +132,15 @@
 @keyframes fromTop {
     0% {
         opacity: 0;
-        transform: rotate(0deg) translate3d(10px, -30px, 0) rotate(0deg);
+        transform: rotate(0deg) translate3d(10px, -70px, 0) rotate(0deg);
     }
     35% {
         opacity: 0.5;
-        transform: rotate(0deg) translate3d(10px, 20px, 0) rotate(0deg);
+        transform: rotate(0deg) translate3d(10px, 50px, 0) rotate(0deg);
     }
     70% {
         opacity: 0.8;
-        transform: rotate(0deg) translate3d(10px, -20px, 0) rotate(0deg);
+        transform: rotate(0deg) translate3d(10px, -30px, 0) rotate(0deg);
     }
     100% {
         opacity: 1;

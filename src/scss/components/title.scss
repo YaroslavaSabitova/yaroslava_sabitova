@@ -2,7 +2,7 @@
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
-    font-size: 90px;
+    font-size: 9rem;
     color: transparent;
     letter-spacing: 4px;
     background: linear-gradient(
@@ -22,6 +22,10 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 1399px) {
+        font-size: 5rem;
+    }
 
     &__wrapper {
         display: flex;
