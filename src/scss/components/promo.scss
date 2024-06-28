@@ -65,6 +65,10 @@
                 margin: 0 auto;
             }
 
+            @media (max-width: 325px) {
+                display: none;
+            }
+
             .photo_1 {
                 margin-right: auto;
                 transform: rotate(15deg);
@@ -119,7 +123,7 @@
         transform: translateX(-50%);
 
         @media (max-width: 450px) {
-            gap: 1rem;
+            gap: 2rem;
         }
     }
 
