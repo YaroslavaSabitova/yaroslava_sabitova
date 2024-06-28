@@ -8,10 +8,10 @@ export default function () {
 
         title.style.bottom = 7 + incrementer * 0.1 + '%';
 
-        photoLeft.style.bottom = 60 + incrementer * 0.16 + '%';
+        photoLeft.style.bottom = 50 + incrementer * 0.16 + '%';
         photoLeft.style.left = 0 + incrementer * -0.2 + '%';
 
-        photoRight.style.bottom = 60 + incrementer * 0.16 + '%';
+        photoRight.style.bottom = 50 + incrementer * 0.16 + '%';
         photoRight.style.right = 0 + incrementer * -0.2 + '%';
     }
 

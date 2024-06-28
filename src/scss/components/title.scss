@@ -27,6 +27,10 @@
         font-size: 5rem;
     }
 
+    @media (max-width: 450px) {
+        font-size: 3rem;
+    }
+
     &__wrapper {
         display: flex;
         width: 45%;
@@ -44,6 +48,10 @@
 
         &_text-1 {
             font-size: 4rem;
+
+            @media (max-width: 450px) {
+                font-size: 2rem;
+            }
         }
     }
 }

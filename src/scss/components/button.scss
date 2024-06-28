@@ -1,7 +1,7 @@
 .button {
     position: relative;
     display: block;
-    width: 170px;
+    width: 100%;
     max-width: 170px;
     padding: 10px 0;
     font-weight: 700;
@@ -11,6 +11,11 @@
     border-radius: 18px;
     transition: all 0.3s ease;
     overflow: hidden;
+
+    @media (max-width: 450px) {
+        max-width: 115px;
+        font-size: 1.7rem;
+    }
 
     &::before {
         @include pseudoelem;
