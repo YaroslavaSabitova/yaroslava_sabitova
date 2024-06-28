@@ -119,7 +119,6 @@
         transform: translateX(-50%);
 
         @media (max-width: 450px) {
-            justify-content: flex-end;
             gap: 1rem;
         }
     }
