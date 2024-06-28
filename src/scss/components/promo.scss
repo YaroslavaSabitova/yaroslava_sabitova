@@ -37,8 +37,8 @@
             }
 
             @media (max-width: 450px) {
-                width: 11rem;
-                height: 11rem;
+                width: 12rem;
+                height: 12rem;
             }
 
             &:hover {
@@ -123,6 +123,10 @@
         transform: translateX(-50%);
 
         @media (max-width: 450px) {
+            gap: 3rem;
+        }
+
+        @media (max-width: 325px) {
             gap: 2rem;
         }
     }
