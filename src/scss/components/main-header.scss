@@ -1,7 +1,8 @@
 .main-header {
-    display: flex;
     padding: 1rem 0;
-    align-items: center;
-    justify-content: space-between;
-    // border: 1px solid red;
+    border: 1px solid red;
+
+    &__logo {
+        margin-right: 35%;
+    }
 }

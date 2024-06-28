@@ -16,29 +16,38 @@
     <body>
         <div class="container">
             <header class="main-header">
-                <a
-                    class="logo main-header__logo"
-                    href="https://t.me/YaroslavaSabitova"
-                    target="_blank"
-                    >YaroslavaSabitova
-                </a>
-                <ul class="nav main-header__nav">
-                    <li class="nav nav__item" style="transition-delay: 0.5s">
-                        <a href="#!" class="nav nav__link hovered-link">Projects</a>
-                    </li>
-                    <li class="nav nav__item" style="transition-delay: 0.8s">
-                        <a href="#!" class="nav nav__link hovered-link">Certificates</a>
-                    </li>
-                    <li class="nav nav__item" style="transition-delay: 1.1s">
-                        <a href="#!" class="nav nav__link hovered-link">Contacts</a>
-                    </li>
-                </ul>
+                <nav class="nav main-header__nav">
+                    <a
+                        class="logo main-header__logo"
+                        href="https://t.me/YaroslavaSabitova"
+                        target="_blank"
+                        >YaroslavaSabitova
+                    </a>
+                    <ul class="site-navigation main-header__navigation js_menu">
+                        <li class="site-navigation__item">
+                            <a href="#projects" class="site-navigation__link">Projects</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#certificates" class="site-navigation__link">Certificates</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#contacts" class="site-navigation__link">Contacts</a>
+                        </li>
+                    </ul>
+
+                    <button class="burger main-header__burger js_burger" type="button">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>
+                </nav>
             </header>
         </div>
 
         <main>
             <div class="container">
-                <section class="promo">
+                <!-- <section class="promo">
                     <div class="promo__photos">
                         <div class="promo__photos_left js_photo_1">
                             <img
@@ -71,7 +80,7 @@
                             Projects
                         </button>
                     </div>
-                </section>
+                </section> -->
 
                 <section class="projects" id="js_btn_promo">
                     <div class="shine-container js_shine-container">
@@ -86,7 +95,7 @@
                                 d="M52.0001 103.644C80.5223 103.644 103.644 80.5223 103.644 52.0001C103.644 23.4778 80.5223 0.355957 52.0001 0.355957C23.4778 0.355957 0.355957 23.4778 0.355957 52.0001C0.355957 80.5223 23.4778 103.644 52.0001 103.644Z" />
                         </svg>
 
-                        <h2 class="second-title projects__title">My projects</h2>
+                        <h2 class="second-title projects__title" id="projects">My projects</h2>
 
                         <ul class="projects__list">
                             <li class="projects__item project">
