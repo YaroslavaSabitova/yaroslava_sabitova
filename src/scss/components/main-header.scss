@@ -1,8 +1,11 @@
 .main-header {
     padding: 1rem 0;
-    border: 1px solid red;
 
     &__logo {
         margin-right: 35%;
+
+        @media (max-width: 575px) {
+            margin-right: 0;
+        }
     }
 }

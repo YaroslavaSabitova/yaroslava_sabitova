@@ -1,8 +1,75 @@
 .logo {
+    position: relative;
     z-index: 1000;
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 3rem;
-    color: var(--color-accent-green);
     cursor: pointer;
+
+    @media (max-width: 450px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 450px) {
+            flex-direction: column;
+        }
+
+        &_name,
+        &_surname {
+            margin-right: 5px;
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 3rem;
+            color: var(--color-accent-green);
+
+            @media (max-width: 450px) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: -5px;
+        right: -47px;
+        width: 50px;
+        height: 50px;
+
+        @media (max-width: 450px) {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+
+        path:nth-child(1) {
+            fill: var(--color-light-green);
+        }
+
+        path {
+            fill: var(--color-accent-green);
+            stroke: var(--color-dark-green);
+        }
+    }
+
+    &:hover &__icon {
+        animation: green-leaf 0.5s ease;
+    }
+}
+
+@keyframes green-leaf {
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(-25deg);
+    }
+    65% {
+        transform: rotate(25deg);
+    }
 }
