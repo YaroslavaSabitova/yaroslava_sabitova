@@ -30,6 +30,20 @@
         transform: translateY(0);
     }
 
+    &__item {
+        transition: all 0.3s ease;
+
+        @media (max-width: 991px) {
+            opacity: 0;
+            transform: translateY(-25px);
+        }
+
+        .menu-open & {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
     &__link {
         position: relative;
         display: inline-block;
@@ -70,6 +84,37 @@
             @media (max-width: 450px) {
                 font-size: 3rem;
             }
+        }
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        display: none;
+    }
+
+    &::before {
+        bottom: 0;
+        left: -6%;
+        width: 38%;
+        height: 18%;
+
+        @media (max-width: 991px) {
+            display: block;
+            // background: url(../img/leaves-left.png) center/cover no-repeat;
+        }
+    }
+
+    &::after {
+        top: 28%;
+        right: -9%;
+        width: 32%;
+        height: 24%;
+
+        @media (max-width: 991px) {
+            display: block;
+            // background: url(../img/leaves-right.png) center/cover no-repeat;
         }
     }
 }
