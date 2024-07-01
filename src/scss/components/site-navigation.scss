@@ -92,29 +92,28 @@
         content: '';
         position: absolute;
         display: none;
+        height: 30%;
     }
 
     &::before {
         bottom: 0;
-        left: -6%;
-        width: 38%;
-        height: 18%;
+        left: 0%;
+        width: 40%;
 
         @media (max-width: 991px) {
             display: block;
-            // background: url(../img/leaves-left.png) center/cover no-repeat;
+            background: url(../img/leaves-left.png) 0% 100% / contain no-repeat;
         }
     }
 
     &::after {
-        top: 28%;
-        right: -9%;
-        width: 32%;
-        height: 24%;
+        top: 20%;
+        right: 0%;
+        width: 30%;
 
         @media (max-width: 991px) {
             display: block;
-            // background: url(../img/leaves-right.png) center/cover no-repeat;
+            background: url(../img/leaves-right.png) 100% 100% / contain no-repeat;
         }
     }
 }

@@ -55,7 +55,7 @@
         &_left {
             animation-name: fromTop, float;
             animation-duration: 1.5s, 4s;
-            animation-delay: 0.5s, 2.1s;
+            animation-delay: 1.2s, 3s;
             animation-timing-function: ease, linear;
             animation-fill-mode: backwards, none;
             animation-iteration-count: 1, infinite;
@@ -85,7 +85,7 @@
 
         &_right {
             animation-name: fromTop, float;
-            animation-duration: 1.7s, 4s;
+            animation-duration: 1.5s, 4s;
             animation-delay: 1.5s, 3.3s;
             animation-timing-function: ease, linear;
             animation-direction: normal, reverse;
