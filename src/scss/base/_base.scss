@@ -13,7 +13,11 @@ body {
     overflow-x: hidden;
 
     &::after {
-        // content: url(../img/account.svg);
+        content: url(./dist/img/1.png) url(./dist/img/2.png) url(./dist/img/digital-agency.png)
+            url(./dist/img/dream-houses.png) url(./dist/img/game-store.png)
+            url(./dist/img/leaves-left.png) url(./dist/img/leaves-right.png)
+            url(./dist/img/parallax-example.png) url(./dist/img/product-24.png)
+            url(./dist/img/tour-baloons.png);
         position: absolute;
         z-index: -1;
         width: 0;
