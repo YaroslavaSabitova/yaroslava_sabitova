@@ -4,7 +4,6 @@
     max-height: 70rem;
     margin: 0 auto;
     padding-bottom: 64px;
-    // border: 1px solid red;
     overflow: hidden;
 
     @media (max-width: 767px) {
@@ -14,7 +13,7 @@
 
     @media (max-width: 450px) {
         max-width: 29rem;
-        max-height: 39rem;
+        max-height: 45rem;
     }
 
     &__wrapper {
@@ -38,7 +37,6 @@
 
         @media (max-width: 767px) {
             height: 60rem;
-            background-position: 50% 0%;
         }
 
         @media (max-width: 450px) {
@@ -103,6 +101,7 @@
 
         &_15 {
             background-image: url(../img/certificates/animation-master.jpg);
+            background-position: center 0;
         }
     }
 
@@ -155,7 +154,7 @@
         transform: translateX(-50%);
 
         @media (max-width: 767px) {
-            bottom: 17%;
+            bottom: 12%;
             gap: 10px;
         }
 
