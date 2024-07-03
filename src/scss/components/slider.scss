@@ -1,0 +1,141 @@
+.slider {
+    position: relative;
+    max-width: 60rem;
+    max-height: 70rem;
+    margin: 0 auto;
+    padding-bottom: 64px;
+    // border: 1px solid red;
+    overflow: hidden;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        background-color: var(--color-transparent);
+        transition: all 1s ease;
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+        height: 55rem;
+
+        &_1 {
+            background: url(../img/certificates/JS-2.jpg) center/contain no-repeat;
+        }
+
+        &_2 {
+            background: url(../img/certificates/JS-1.png) center/contain no-repeat;
+        }
+
+        &_3 {
+            background: url(../img/certificates/softskills.png) center/contain no-repeat;
+        }
+
+        &_4 {
+            background: url(../img/certificates/effective-learning.png) center/contain no-repeat;
+        }
+
+        &_5 {
+            background: url(../img/certificates/Python-1.png) center/contain no-repeat;
+        }
+
+        &_6 {
+            background: url(../img/certificates/Python-2.png) center/contain no-repeat;
+        }
+
+        &_7 {
+            background: url(../img/certificates/equations.png) center/contain no-repeat;
+        }
+
+        &_8 {
+            background: url(../img/certificates/SQL.png) center/contain no-repeat;
+        }
+
+        &_9 {
+            background: url(../img/certificates/technical-writing.png) center/contain no-repeat;
+        }
+
+        &_10 {
+            background: url(../img/certificates/web-0.png) center/contain no-repeat;
+        }
+
+        &_11 {
+            background: url(../img/certificates/web-1.png) center/contain no-repeat;
+        }
+
+        &_12 {
+            background: url(../img/certificates/web-2.png) center/contain no-repeat;
+        }
+
+        &_13 {
+            background: url(../img/certificates/emmet.png) center/contain no-repeat;
+        }
+
+        &_14 {
+            background: url(../img/certificates/webflow.png) center/contain no-repeat;
+        }
+
+        &_15 {
+            background: url(../img/certificates/animation-master.jpg) center/contain no-repeat;
+        }
+    }
+
+    &__btn_prev,
+    &__btn_next {
+        position: absolute;
+        bottom: 0%;
+        background-color: var(--color-light-green);
+        border: 1px solid var(--color-accent-green);
+        border-radius: 100%;
+    }
+
+    &__btn_prev {
+        left: 0%;
+    }
+
+    &__btn_next {
+        right: 0%;
+    }
+
+    &__btn_prev-img,
+    &__btn_next-img {
+        width: 4.5rem;
+    }
+
+    &__btn_prev-img circle,
+    &__btn_next-img circle {
+        fill: var(--color-dark-green);
+        fill-opacity: 0.2;
+    }
+
+    &__btn_prev-img:hover circle,
+    &__btn_next-img:hover circle,
+    &__btn_prev-img:active circle,
+    &__btn_next-img:active circle {
+        fill: var(--color-dark-green);
+        fill-opacity: 0.5;
+    }
+
+    &__pagination {
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        display: flex;
+        gap: 15px;
+        transform: translateX(-50%);
+    }
+
+    &__dot {
+        width: 15px;
+        height: 15px;
+        background-color: var(--color-light-green);
+        border: 1px solid var(--color-accent-green);
+        border-radius: 100%;
+        opacity: 0.7;
+        transition: background-color 0.3s ease;
+
+        &.active-dot {
+            background-color: var(--color-accent-green);
+        }
+    }
+}
