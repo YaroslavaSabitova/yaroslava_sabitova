@@ -9,12 +9,12 @@
 
     @media (max-width: 767px) {
         max-width: 40rem;
-        max-height: 45rem;
+        max-height: 75rem;
     }
 
     @media (max-width: 450px) {
         max-width: 29rem;
-        max-height: 29rem;
+        max-height: 39rem;
     }
 
     &__wrapper {
@@ -22,6 +22,10 @@
         align-items: center;
         background-color: var(--color-transparent);
         transition: all 1s ease;
+
+        @media (max-width: 767px) {
+            align-items: flex-start;
+        }
     }
 
     &__img {
@@ -33,7 +37,12 @@
         background-position: center center;
 
         @media (max-width: 767px) {
+            height: 60rem;
             background-position: 0% 0%;
+        }
+
+        @media (max-width: 450px) {
+            height: 36rem;
         }
 
         &_1 {
@@ -146,12 +155,12 @@
         transform: translateX(-50%);
 
         @media (max-width: 767px) {
-            bottom: 22%;
+            bottom: 17%;
             gap: 10px;
         }
 
         @media (max-width: 450px) {
-            bottom: 23%;
+            bottom: 10%;
             gap: 9px;
         }
     }
