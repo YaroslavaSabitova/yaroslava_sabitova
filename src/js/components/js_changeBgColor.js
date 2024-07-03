@@ -1,11 +1,11 @@
 export default function () {
     const colorStep = 3;
     let colorResultHSL = 147;
-    let curentScroll = 0;
+    let currentScroll = 0;
 
     function changeColor() {
         let scrollTop = window.scrollY;
-        const delta = scrollTop - curentScroll;
+        const delta = scrollTop - currentScroll;
 
         if (delta > 0) {
             colorResultHSL += colorStep;
@@ -26,7 +26,7 @@ export default function () {
 
         document.body.setAttribute('style', `background-color: hsl(${colorResultHSL}deg 50% 90%);`);
 
-        curentScroll = scrollTop;
+        currentScroll = scrollTop;
     }
 
     window.onscroll = changeColor;

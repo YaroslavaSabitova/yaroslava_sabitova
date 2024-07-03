@@ -7,6 +7,16 @@
     // border: 1px solid red;
     overflow: hidden;
 
+    @media (max-width: 767px) {
+        max-width: 40rem;
+        max-height: 45rem;
+    }
+
+    @media (max-width: 450px) {
+        max-width: 29rem;
+        max-height: 29rem;
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;
@@ -18,65 +28,72 @@
         position: relative;
         width: 100%;
         height: 55rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @media (max-width: 767px) {
+            background-position: 0% 0%;
+        }
 
         &_1 {
-            background: url(../img/certificates/JS-2.jpg) center/contain no-repeat;
+            background-image: url(../img/certificates/JS-2.jpg);
         }
 
         &_2 {
-            background: url(../img/certificates/JS-1.png) center/contain no-repeat;
+            background-image: url(../img/certificates/JS-1.png);
         }
 
         &_3 {
-            background: url(../img/certificates/softskills.png) center/contain no-repeat;
+            background-image: url(../img/certificates/softskills.png);
         }
 
         &_4 {
-            background: url(../img/certificates/effective-learning.png) center/contain no-repeat;
+            background-image: url(../img/certificates/effective-learning.png);
         }
 
         &_5 {
-            background: url(../img/certificates/Python-1.png) center/contain no-repeat;
+            background-image: url(../img/certificates/Python-1.png);
         }
 
         &_6 {
-            background: url(../img/certificates/Python-2.png) center/contain no-repeat;
+            background-image: url(../img/certificates/Python-2.png);
         }
 
         &_7 {
-            background: url(../img/certificates/equations.png) center/contain no-repeat;
+            background-image: url(../img/certificates/equations.png);
         }
 
         &_8 {
-            background: url(../img/certificates/SQL.png) center/contain no-repeat;
+            background-image: url(../img/certificates/SQL.png);
         }
 
         &_9 {
-            background: url(../img/certificates/technical-writing.png) center/contain no-repeat;
+            background-image: url(../img/certificates/technical-writing.png);
         }
 
         &_10 {
-            background: url(../img/certificates/web-0.png) center/contain no-repeat;
+            background-image: url(../img/certificates/web-0.png);
         }
 
         &_11 {
-            background: url(../img/certificates/web-1.png) center/contain no-repeat;
+            background-image: url(../img/certificates/web-1.png);
         }
 
         &_12 {
-            background: url(../img/certificates/web-2.png) center/contain no-repeat;
+            background-image: url(../img/certificates/web-2.png);
         }
 
         &_13 {
-            background: url(../img/certificates/emmet.png) center/contain no-repeat;
+            background-image: url(../img/certificates/emmet.png);
         }
 
         &_14 {
-            background: url(../img/certificates/webflow.png) center/contain no-repeat;
+            background-image: url(../img/certificates/webflow.png);
         }
 
         &_15 {
-            background: url(../img/certificates/animation-master.jpg) center/contain no-repeat;
+            background-image: url(../img/certificates/animation-master.jpg);
         }
     }
 
@@ -100,6 +117,10 @@
     &__btn_prev-img,
     &__btn_next-img {
         width: 4.5rem;
+
+        @media (max-width: 450px) {
+            width: 2.5rem;
+        }
     }
 
     &__btn_prev-img circle,
@@ -123,6 +144,16 @@
         display: flex;
         gap: 15px;
         transform: translateX(-50%);
+
+        @media (max-width: 767px) {
+            bottom: 22%;
+            gap: 10px;
+        }
+
+        @media (max-width: 450px) {
+            bottom: 23%;
+            gap: 9px;
+        }
     }
 
     &__dot {
@@ -133,6 +164,11 @@
         border-radius: 100%;
         opacity: 0.7;
         transition: background-color 0.3s ease;
+
+        @media (max-width: 450px) {
+            width: 7px;
+            height: 7px;
+        }
 
         &.active-dot {
             background-color: var(--color-accent-green);
