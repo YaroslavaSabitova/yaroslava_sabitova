@@ -4,7 +4,6 @@
     max-height: 70rem;
     margin: 0 auto;
     padding-bottom: 64px;
-    // border: 1px solid red;
     overflow: hidden;
 
     @media (max-width: 767px) {
@@ -109,9 +108,6 @@
     &__btn {
         position: absolute;
         bottom: 2%;
-        // background-color: var(--color-light-green);
-        // border: 1px solid var(--color-accent-green);
-        // border-radius: 100%;
 
         &::before,
         &::after {
@@ -138,11 +134,11 @@
     }
 
     &__btn_prev {
-        left: 2%;
+        left: 2.5%;
     }
 
     &__btn_next {
-        right: 2%;
+        right: 2.5%;
     }
 
     &__btn_prev-img,
