@@ -139,11 +139,11 @@
     }
 
     &__btn_prev {
-        left: 2.5%;
+        left: 20%;
     }
 
     &__btn_next {
-        right: 2.5%;
+        right: 20%;
     }
 
     &__btn_prev-img,
@@ -151,7 +151,7 @@
         width: 4.5rem;
 
         @media (max-width: 450px) {
-            width: 2.5rem;
+            width: 3.5rem;
         }
     }
 
