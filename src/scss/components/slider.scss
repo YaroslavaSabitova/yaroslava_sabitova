@@ -4,6 +4,7 @@
     max-height: 70rem;
     margin: 0 auto;
     padding-bottom: 64px;
+    // border: 1px solid red;
     overflow: hidden;
 
     @media (max-width: 767px) {
@@ -107,7 +108,7 @@
 
     &__btn {
         position: absolute;
-        bottom: 3%;
+        bottom: 2%;
         // background-color: var(--color-light-green);
         // border: 1px solid var(--color-accent-green);
         // border-radius: 100%;
@@ -137,11 +138,11 @@
     }
 
     &__btn_prev {
-        left: 7%;
+        left: 2%;
     }
 
     &__btn_next {
-        right: 7%;
+        right: 2%;
     }
 
     &__btn_prev-img,
@@ -169,7 +170,7 @@
 
     &__pagination {
         position: absolute;
-        bottom: 3%;
+        bottom: 4%;
         left: 50%;
         display: flex;
         gap: 15px;
