@@ -3,7 +3,8 @@
     max-width: 60rem;
     max-height: 70rem;
     margin: 0 auto;
-    padding-bottom: 64px;
+    padding-bottom: 20%;
+    // border: 1px solid red;
     overflow: hidden;
 
     @media (max-width: 767px) {
@@ -14,6 +15,10 @@
     @media (max-width: 450px) {
         max-width: 29rem;
         max-height: 45rem;
+    }
+
+    @media (max-width: 450px) {
+        padding-bottom: 30%;
     }
 
     &__wrapper {
@@ -166,19 +171,21 @@
 
     &__pagination {
         position: absolute;
-        bottom: 4%;
+        bottom: 15%;
         left: 50%;
         display: flex;
         gap: 15px;
         transform: translateX(-50%);
 
         @media (max-width: 767px) {
-            bottom: 12%;
             gap: 10px;
         }
 
+        @media (max-width: 575px) {
+            bottom: 14%;
+        }
+
         @media (max-width: 450px) {
-            bottom: 10%;
             gap: 9px;
         }
     }
@@ -193,8 +200,8 @@
         transition: background-color 0.3s ease;
 
         @media (max-width: 450px) {
-            width: 7px;
-            height: 7px;
+            width: 10px;
+            height: 10px;
         }
 
         &.active-dot {
