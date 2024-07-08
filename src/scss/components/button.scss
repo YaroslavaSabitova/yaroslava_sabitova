@@ -7,8 +7,10 @@
     font-weight: 700;
     font-size: 2.5rem;
     text-align: center;
-    color: var(--color-accent-green);
-    border-radius: 18px;
+    background-color: var(--color-transparent);
+    border: var(--border);
+    border-radius: 1.8rem;
+    box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
     overflow: hidden;
 
@@ -24,15 +26,38 @@
         background: linear-gradient(44deg, #7edab9, #ffffff85, #7edab9);
         transition: transform 0.3s ease;
         transform: translateX(0%);
+
+        @media (max-width: 991px) {
+            animation: btn-shine 3.5s linear infinite;
+        }
     }
 
     &:hover::before {
         transform: translateX(-50%);
     }
 
+    &:hover {
+        border: var(--border-hover);
+        box-shadow: var(--box-shadow-hover);
+    }
+
     &:active {
         box-shadow: 3px 3px 2px var(--color-black);
-        filter: brightness(0.8);
+        filter: brightness(0.9);
         transform: translateY(5px);
+    }
+}
+
+@keyframes btn-shine {
+    from {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0%);
     }
 }
