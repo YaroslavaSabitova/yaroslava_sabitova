@@ -1,0 +1,87 @@
+.dots__wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40rem;
+
+    .dot {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        font-size: 16px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 1px solid var(--color-white);
+        border-radius: 100%;
+        animation: blinker 3s linear infinite;
+
+        &-B {
+            background-color: var(--color-transparent);
+            border: 2px solid var(--color-white);
+        }
+
+        &_1 {
+            top: 0;
+            left: 0;
+        }
+
+        &_2 {
+            top: 20%;
+            left: 25%;
+            animation-delay: 1.7s;
+        }
+
+        &_3 {
+            top: 60%;
+            left: 40%;
+            animation-delay: 1.1s;
+        }
+
+        &_4 {
+            top: 75%;
+            left: 12%;
+            animation-delay: 0.5s;
+        }
+
+        &_5 {
+            top: 3%;
+            left: 52%;
+            animation-delay: 0.5s;
+        }
+
+        &_6 {
+            top: 27%;
+            left: 65%;
+            animation-delay: 1.6s;
+        }
+
+        &_7 {
+            bottom: 0;
+            left: 72%;
+            animation-delay: 1.2s;
+        }
+
+        &_8 {
+            top: 3%;
+            left: 87%;
+            animation-delay: 0.5s;
+        }
+
+        &_9 {
+            top: 50%;
+            right: 19%;
+            animation-delay: 1.3s;
+        }
+
+        &_10 {
+            bottom: 17%;
+            left: 87%;
+            animation-delay: 1.1s;
+        }
+    }
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
