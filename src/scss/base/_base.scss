@@ -1,6 +1,7 @@
 html,
 body {
     font-size: 62.5%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -10,7 +11,6 @@ body {
     color: var(--color-black);
     background-color: var(--color-bg);
     transition: all 0.5s ease;
-    overflow-x: hidden;
 
     &::after {
         content: url(../img/1.png) url(../img/2.png) url(../img/digital-agency.png)
@@ -32,4 +32,35 @@ body {
         opacity: 0;
         overflow: hidden;
     }
+}
+
+.container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 7rem;
+
+    @media (max-width: 1199px) {
+        padding: 0 5rem;
+    }
+
+    @media (max-width: 991px) {
+        padding: 0 3rem;
+    }
+
+    @media (max-width: 450px) {
+        padding: 0 2rem;
+    }
+
+    @media (max-width: 325px) {
+        padding: 0 1rem;
+    }
+}
+
+.start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid red;
 }

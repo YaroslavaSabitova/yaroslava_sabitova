@@ -4,6 +4,7 @@ import js_changeBgColor from './components/js_changeBgColor.js';
 import js_btn_promo from './components/js_btn_promo.js';
 import js_shineElem from './components/js_shineElem.js';
 import js_slider from './components/js_slider.js';
+import js_button_up from './components/js_button_up.js';
 
 (function () {
     js_burger();
@@ -12,4 +13,5 @@ import js_slider from './components/js_slider.js';
     js_btn_promo();
     js_shineElem();
     js_slider();
+    js_button_up();
 })();
