@@ -19,3 +19,15 @@ Personal page project with CSS and JS-animation. Made with [Gulp](https://gulpjs
 No Figma, sorry =)
 
 **Personal Page** (in process) - https://yaroslavasabitova.github.io/yaroslava_sabitova/
+
+**Preview**
+
+https://github.com/YaroslavaSabitova/yaroslava_sabitova/assets/114692293/de1aa0d9-cf24-452d-97c7-812bf02aaaf9
+
+<br>
+
+https://github.com/YaroslavaSabitova/yaroslava_sabitova/assets/114692293/912495ec-c7ea-4630-9000-d0bd7320cc7a
+
+
+
+
