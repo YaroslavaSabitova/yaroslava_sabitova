@@ -22,7 +22,7 @@ No Figma, sorry =)
 
 **Preview**
 
-https://github.com/YaroslavaSabitova/yaroslava_sabitova/assets/114692293/de1aa0d9-cf24-452d-97c7-812bf02aaaf9
+https://github.com/YaroslavaSabitova/yaroslava_sabitova/assets/114692293/103c9f54-67c2-477b-861e-82f017406b3b
 
 <br>
 
