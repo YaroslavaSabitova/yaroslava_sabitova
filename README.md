@@ -26,7 +26,9 @@ https://github.com/YaroslavaSabitova/yaroslava_sabitova/assets/114692293/103c9f5
 
 <br>
 
-https://github.com/YaroslavaSabitova/yaroslava_sabitova/assets/114692293/912495ec-c7ea-4630-9000-d0bd7320cc7a
+https://github.com/user-attachments/assets/11c0a468-0ece-4ecd-8555-6790b277f19f
+
+
 
 
 
