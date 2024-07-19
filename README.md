@@ -22,11 +22,13 @@ No Figma, sorry =)
 
 **Preview**
 
-https://github.com/YaroslavaSabitova/yaroslava_sabitova/assets/114692293/103c9f54-67c2-477b-861e-82f017406b3b
+https://github.com/user-attachments/assets/abcc2f4e-674b-4ef5-b401-0e38756db52d
 
 <br>
 
-https://github.com/user-attachments/assets/11c0a468-0ece-4ecd-8555-6790b277f19f
+https://github.com/user-attachments/assets/3fcc523e-1e1a-4431-85bf-07e61a3a599e
+
+
 
 
 
