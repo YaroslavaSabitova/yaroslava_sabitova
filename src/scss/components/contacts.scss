@@ -7,15 +7,16 @@
 
     &__wrapper {
         display: flex;
+        margin-bottom: 12rem;
         align-items: center;
-        justify-content: space-evenly;
-        gap: 1rem;
+        justify-content: center;
+        gap: 7rem;
 
         @media (max-width: 575px) {
             flex-direction: column;
             flex-wrap: wrap;
             align-content: center;
-            gap: 2rem;
+            gap: 3rem;
         }
     }
 
